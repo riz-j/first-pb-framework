@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  first-pb-framework:
+    container_name: first-pb-framework
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8090:8090"
+    restart: always
